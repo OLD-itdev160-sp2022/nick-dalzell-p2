@@ -11,22 +11,46 @@
 
 <body>
     <header>
-        <h1 class = "header-title">Elden Ring To-Do List</h1>
+        <h1 class = "header-title">Elden Ring Resource Website</h1>
+        <img src = "images/battle.jpg" alt = "Battle between Malenia and Radahn">
     </header>
 
-    <section>
+    <section id = "links">
+        <h2>Some helpful links:</h2>
+        <a href = "https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki">FextraLife Wikipedia page</a>
+        <br>
+        <a href = "https://docs.google.com/spreadsheets/d/1uZRm2f2nb-tbrBcWH5faIfZL7PoaoB3YIgO-nJ2uFG8/edit#gid=0">NPC Questline guide</a>
+        <br>
+        <a href = "mailto:ndalzell1219@gmail.com">Email me for permission to check out the NPC questline guide!</a>
+    </section>
+
+    <div class = "counter">
+        <div class = "row">
+            <div class = "column">
+                <h1>Death Counter!</h1>
+                <h1 id = "counter">0</h1>
+                <div class = "button-container">
+                    <button class = "counterButton">Add death</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id = "todo-list-box">        
+        <h2>To-Do List</h2>
+        <p>For remembering all those dungeons or enemies you come across!</p>
         <input type = "text" id = "input-task">
         <button type = "button" id = "add-task">Add to List</button>
     </section>
 
     <section id = "todo-list-container">
-        <ol id = "active-list"></ol>
-        <ul id = "completed-list"></ul>
+        <ol id = "active-list"></ol>        
     </section>
 
-    <footer>
-
-    </footer>
+    <section>
+        <h3>You did it! Here is your list of accomplishments.</h3>
+        <ul id = "completed-list"></ul>
+    </section>
 
     <script src = "js/script.js"></script>
 </body>

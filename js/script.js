@@ -1,3 +1,32 @@
+(function(){
+    const buttons = document.querySelectorAll('.counterButton')
+    let count = 0;
+
+    //add event listeners and functionality to each button
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(){
+            if (button.classList.contains('prevBtn')) {
+                count--
+            } else if (button.classList.contains('counterButton')){
+                count++
+            }
+
+            //selects counter text
+            const counter = document.querySelector('#counter')
+            counter.textContent = count
+            
+            if (count < 0) {
+                counter.getElementsByClassName.color = 'green'
+            } else if (count > 0) {
+                counter.getElementsByClassName.color = 'red'
+            } else {
+                counter.getElementsByClassName.color = '#3333333'
+            }
+        })
+    })
+})()
+
+//create array for tasks to be held inside
 var tasks = [];
 
 //task status enum
@@ -68,7 +97,7 @@ function completeTask(event) {
     document.getElementById('completed-list').appendChild(taskElement);
 }
 
-//key press handler to automatically click add task button
+//key press handler to automatically click add task button for enter button
 function clickButton (event) {
     if (event.keyCode === 13) {
         document.getElementById('add-task').click();

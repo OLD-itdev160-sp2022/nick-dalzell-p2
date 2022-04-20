@@ -2,6 +2,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: auto 30px;
     color: #555;
+    background-color: rgb(228, 225, 225)
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border: 5px, black;
 }
 
 ul {
