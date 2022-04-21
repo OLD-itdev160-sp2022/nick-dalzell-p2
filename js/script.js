@@ -1,11 +1,29 @@
+//create array of quotes
+var quotes = [
+    'Forefathers one and all! Bear witness! - Godrick the Grafted',
+    'Join the Serpent King as Family. Together, we shall devour the very Gods! - Rykard, Lord of Blasphemy',
+    'I could never betray her, no matter what happens. Ranni, she needs me... - Blaidd, the Half Wolf',
+    'I am Malenia, blade of Miquella. And I have never known defeat. - Malenia, blade of Miquella',
+    'I was able to live as my own person, if only in passing. -Millicent',
+    'I have given thee courtesy enough. Now I fight as Hoarah Loux, WARRIOR! -Hoarah Loux',
+    'Well then, shall we? My dear consort eternal. -Ranni the Witch',
+    'Have it writ upon thy meagre grave: Felled by Morgott, last of all kings! -Morgott the Omen King'
+]
+
+function newQuote() {
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById('randomQuote').innerHTML = quotes[randomNumber];
+}
+
+//function for counter button
 (function(){
     const buttons = document.querySelectorAll('.counterButton')
     let count = 0;
 
-    //add event listeners and functionality to each button
+    //add event listeners and functionality to each button (no negative counter button)
     buttons.forEach(function(button){
         button.addEventListener('click', function(){
-            if (button.classList.contains('prevBtn')) {
+            if (button.classList.contains('noReason')) {
                 count--
             } else if (button.classList.contains('counterButton')){
                 count++
