@@ -10,6 +10,7 @@ var quotes = [
     'Have it writ upon thy meagre grave: Felled by Morgott, last of all kings! -Morgott the Omen King'
 ]
 
+//generates random quote
 function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('randomQuote').innerHTML = quotes[randomNumber];
@@ -33,18 +34,20 @@ function newQuote() {
             const counter = document.querySelector('#counter')
             counter.textContent = count
             
-            if (count < 0) {
+            /*if (count < 0) {
                 counter.getElementsByClassName.color = 'green'
             } else if (count > 0) {
                 counter.getElementsByClassName.color = 'red'
             } else {
                 counter.getElementsByClassName.color = '#3333333'
-            }
+            }*/
         })
     })
 })()
 
 //create array for tasks to be held inside
+//this is from one of our assignments- I added it cause I thought it was applicable
+//to my website
 var tasks = [];
 
 //task status enum

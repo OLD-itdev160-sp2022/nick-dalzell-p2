@@ -19,6 +19,13 @@ li {
     padding: 5px;
 }
 
+section {
+    margin-top: 20;
+    margin-bottom: 20px;
+    width: 400px;
+    border: 1px solid black;
+}
+
 #todo-list-container {
     margin-top: 20px;
 }

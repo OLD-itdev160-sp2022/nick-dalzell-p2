@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 class = "header-title">Elden Ring Resource Website</h1>
+        <h1 class = "header-title">Elden Ring Resource & Utility Website</h1>
         <img src = "images/battle.jpg" alt = "Battle between Malenia and Radahn">
     </header>
 
@@ -24,22 +24,20 @@
         <a href = "mailto:ndalzell1219@gmail.com">Email me for permission to check out the NPC questline guide!</a>
     </section>
 
-    <h2>Elden Ring Quote Generator</h2> 
-    <div id = "randomQuote"></div>
-    <button onclick = "newQuote()">Click here for an epic quote</button>
+    <section id = "quote-generator">
+        <h2>Elden Ring Quote Generator</h2> 
+        <button onclick = "newQuote()">Click here for an epic quote</button>
+        <div id = "randomQuote"></div>
+    </section>
+    
 
-    <div class = "counter">
-        <div class = "row">
-            <div class = "column">
-                <h1>Death Counter!</h1>
-                <p>Don't worry, the more the better!</p>
-                <h1 id = "counter">0</h1>
-                <div class = "button-container">
-                    <button class = "counterButton">Add death</button>
-                </div>
-            </div>
+    <section id = "death-counter">
+        <div class = "counter">
+            <h1>Death Counter!</h1>
+            <button class = "counterButton">Add death</button>
+            <h1 id = "counter">0</h1>        
         </div>
-    </div>
+    </section>
 
     <section id = "todo-list-box">        
         <h2>To-Do List</h2>
@@ -49,10 +47,11 @@
     </section>
 
     <section id = "todo-list-container">
+        <h3>Active List</h3>
         <ol id = "active-list"></ol>        
     </section>
 
-    <section>
+    <section id = "finished-list">
         <h3>You did it! Here is your list of accomplishments.</h3>
         <ul id = "completed-list"></ul>
     </section>
