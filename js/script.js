@@ -21,7 +21,8 @@ function newQuote() {
     const buttons = document.querySelectorAll('.counterButton')
     let count = 0;
 
-    //add event listeners and functionality to each button (no negative counter button)
+    //add event listeners and functionality to each button (no negative counter button 
+    //needed but wanted to include if/else statement)
     buttons.forEach(function(button){
         button.addEventListener('click', function(){
             if (button.classList.contains('noReason')) {
@@ -33,14 +34,6 @@ function newQuote() {
             //selects counter text
             const counter = document.querySelector('#counter')
             counter.textContent = count
-            
-            /*if (count < 0) {
-                counter.getElementsByClassName.color = 'green'
-            } else if (count > 0) {
-                counter.getElementsByClassName.color = 'red'
-            } else {
-                counter.getElementsByClassName.color = '#3333333'
-            }*/
         })
     })
 })()
