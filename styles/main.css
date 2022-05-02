@@ -1,14 +1,63 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: auto 30px;
-    color: #555;
-    background-color: rgb(228, 225, 225)
+    color: rgb(49, 41, 41);
+    background-color: rgb(212, 207, 207)
 }
 
-img {
-    width: 300px;
-    height: 200px;
-    border: 5px, black;
+.slide {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 75vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+.slide1 {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/fNyjvMw8evGHzbri3GWGRj.jpg");
+}
+
+.slide2 {
+    background-image: url("https://assets-prd.ignimgs.com/2021/12/20/elden-ring-1640039956608.png");
+}
+
+.slide3 {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/E7RJm3PFysWPWq9sNYCij5-1200-80.jpg");
+}
+
+.slide4 {
+    background-image: url("https://imageio.forbes.com/specials-images/imageserve/62261e8ead49224fa290a149/elden/960x0.jpg?fit=bounds&format=jpg&width=960");
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 20px;
+    float: left;
+}
+    
+#arrow-right {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 20px;
+    float: right;
 }
 
 ul {
@@ -29,12 +78,24 @@ section {
     width: 500px;
 }
 
+#randomButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
 #randomQuote {
+    
     padding-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(35, 2, 2);
 }
 
 #death-counter {
-    align-self: center;
+    text-align: center;
+    width: 250px;
 }
 
 #todo-list-container {
